@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+	
+<head>
+	
+<meta charset="UTF-8">
+<title>Flygod 7</title>
+	
+	<style>
+		
+		body
+		
+		{
+			
+			text-align: center;
+			overflow: scroll;
+			background-color: yellow;
+			
+		}
+		
+	
+	</style>
+</head>
+
+<body>
+	
+	<h1>7even Canvas</h1>
+	
+	<canvas id="myCanvas" width="400" height="400" style="border:8px solid #202651;">
+	
+	Your browser does not support the HTML canvas tag.
+	
+	
+	</canvas>
+	
+	<script>
+	
+	var c = document.getElementById ("myCanvas");
+		
+	var ctx = c.getContext("2d");
+		
+		
+	ctx.beginPath();
+	ctx.arc(Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(600)+1), 30, 0, 2 * Math.PI);
+		
+	ctx.strokeStyle = "0" + Math.floor(Math.random()*0xFFFFFF).toString(16);
+		
+	ctx.stroke();
+		
+		
+	</script>
+	
+</body>
+	
+</html>
